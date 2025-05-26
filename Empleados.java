@@ -15,12 +15,12 @@ public class Empleados {
             lista[contador] = empleado;
             contador++;
         } else {
-            System.out.println("No se pueden agregar más empleados.");
+            System.out.println(Mensajes.LIMITE_EMPLEADOS);
         }
     }
 
     public void MostrarEmpleados(){
-        System.out.println("Lista de Empleados:");
+        System.out.println(Mensajes.LISTA_EMPLEADOS);
         for (Empleado empleado : lista){
             System.out.println(empleado);
         }
